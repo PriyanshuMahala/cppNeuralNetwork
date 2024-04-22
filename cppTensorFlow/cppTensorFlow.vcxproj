@@ -24,6 +24,7 @@
     <ProjectGuid>{663fe8d0-4f6f-43b1-8500-0208317e906a}</ProjectGuid>
     <RootNamespace>cppTensorFlow</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>cppANN</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
