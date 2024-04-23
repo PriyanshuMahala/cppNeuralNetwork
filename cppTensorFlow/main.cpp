@@ -4,7 +4,7 @@
 
 int main(int argc, char** argv) {
 	//Input
-	Neuron* n = new Neuron(1.5);
+	Neuron* n = new Neuron(5);
 	std::cout << "Val: " << n->getNval() << std::endl;
 	std::cout << "Activated Val: " << n->getAval() << std::endl;
 	std::cout << "Derived Val: " << n->getDval() << std::endl;
