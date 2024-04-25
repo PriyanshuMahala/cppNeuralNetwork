@@ -13,7 +13,7 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\HeaderSRC">
+    <Filter Include="Source Files\ClassSRC">
       <UniqueIdentifier>{4b8aced9-a4f3-4f9c-8ac8-d7c0edc7c5c3}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -22,10 +22,13 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Neuron.cpp">
-      <Filter>Source Files\HeaderSRC</Filter>
+      <Filter>Source Files\ClassSRC</Filter>
     </ClCompile>
     <ClCompile Include="Layer.cpp">
-      <Filter>Source Files\HeaderSRC</Filter>
+      <Filter>Source Files\ClassSRC</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix.cpp">
+      <Filter>Source Files\ClassSRC</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -33,6 +36,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

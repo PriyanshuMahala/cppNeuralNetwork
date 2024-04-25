@@ -23,6 +23,8 @@ public:
 
 	void derive();
 
+	void setval(double val);
+
 	double getNval()const { return this->val; }
 	double getAval()const { return this->activatedVal; }
 	double getDval()const { return this->derivedVal; }
