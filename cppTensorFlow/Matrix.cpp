@@ -1,11 +1,20 @@
 #include "Matrix.h"
 #include <ctime>
+#include <iomanip> 
 
 void Matrix::printToConsole() {
+	int width = 10;
+
 	for (int i = 0; i < numRows; i++) {
-		std::cout << this->values;
+		for (int j = 0; j < numRows; j++) {
+			std::cout << std::setw(width) << std::left << this->values.at(i).at(j);
+			std::cout << "\t\t";
+		}
+		std::cout << std::endl;
 	}
 }
+
+
 
 Matrix::Matrix(int nrow, int ncol, bool isRandom) {
 	this->numRows = nrow;
@@ -27,6 +36,9 @@ Matrix::Matrix(int nrow, int ncol, bool isRandom) {
 
 
 double Matrix::generateRandom() {
-	srand(time(NULL));
-	return rand() % 2;
+	std::random_device rd;
+	std::mt19937 gen(rd());
+	std::uniform_real_distribution<> dis(0, 1);
+
+	return dis(gen);
 }

@@ -4,7 +4,7 @@
 #include "Neuron.h"
 
 
-class Layer{
+class Layer {
 private:
 	int size = 0;
 

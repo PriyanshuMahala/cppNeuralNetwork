@@ -1,12 +1,14 @@
 #include <iostream>
 #include "Neuron.h"
+#include "Layer.h"
+#include "Matrix.h"
 
 
 int main(int argc, char** argv) {
-	//Input
-	Neuron* n = new Neuron(5);
-	std::cout << "Val: " << n->getNval() << std::endl;
-	std::cout << "Activated Val: " << n->getAval() << std::endl;
-	std::cout << "Derived Val: " << n->getDval() << std::endl;
-	return 0;
+
+	Matrix* new_Matrix = new Matrix(3, 2, true);
+	new_Matrix->printToConsole();
+
+	delete new_Matrix;
+
 }
